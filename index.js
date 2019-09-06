@@ -1,11 +1,7 @@
-import styles from './module.scss'
-require('./imp.js');
+const el = document.createElement('div')
 
-console.log('poi start');
-function testES(){
-	setTimeout(()=>{
-		console.log('4g59');
-	},1000)
 
-}
-testES()
+document.body.appendChild(el)
+el.textContent =  require('./req.js').somevalue
+
+
